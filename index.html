@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="styles.css" rel="stylesheet">
+
+    <title>Pokemon API</title>
+</head>
+
+<body>
+
+
+
+    <main>
+        <form id="pokemon-form" autocomplete="off">
+            <label for="pokemon" class="animate-charcter">Nombre del Pokemon:</label>
+            <input type="text" id="pokemon" name="pokemon" placeholder="Search..">
+            <input type="submit" value="Buscar" class="button">
+
+
+            <img src="assets/pokeball.gif" class="pokeball">
+
+
+
+            <div class="container">
+
+
+
+                <img src="./assets/pokemon-go-logo-font.png" alt="Pokemon" id="pokemon-img" width="200px"
+                    height="200px">
+
+                <span>Nombre: <h4 data-id="0">pikachu </h4></span>
+
+                <span>Tipo: <h4 data-id="1">electric</h4></span>
+
+                <span>Altura: <h4 data-id="2">4</h4></span>
+
+                <span>Peso: <h4 data-id="3">60</h4></span>
+
+
+
+                <div class="moveAndStat">
+                    <label for="stats">Estadísticas</label>
+                    <select name="stats" id="stats" class="classic">
+                        <option>Hp: 35</option>
+                    </select>
+
+                    <label for="movements">Movimientos</label>
+                    <select name="movements" id="movements" class="classic">
+                        <option>Electric-Punch</option>
+                    </select>
+                </div>
+
+            </div>
+
+
+
+        </form>
+
+
+
+    </main>
+
+    <div id="myModal" class="modal">
+
+        <!-- Modal content -->
+        <div class="modal-content">
+            <span class="close">&times;</span>
+            <div class="text">
+                <p>Pokemon no valido!</p>
+                <img src="./assets/alert.png" alt="alert img" class="alert">
+            </div>
+        </div>
+
+    </div>
+
+
+    <script src="logica.js"></script>
+</body>
+
+</html>
